@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Products.css">
+    <title>Products - CAteriNgz</title>
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">
+      <p onclick="homepage()">CAteriNgz</p>
+    </div>
+    <ol>
+        <a href="Products.html"><li>Products</li></a>
+        <a href="AboutUs.html"><li>About Us</li></a>
+        <a href="testimonial.html"><li>Testimonial</li></a>
+    </ol>
+    <div class="buttons">
+        <button class="regist-btn" onclick="registpage()">Register</button>
+    </div>
+  </div>
+
+  <div class="page-container">
+    <div class="header">
+        <h1>Our Products</h1>
+        <div class="divider"></div>
+    </div>
+
+    <div class="product-bar">
+        <div class="filter-buttons">
+            <button class="filter-btn active">Promo</button>
+            <button class="filter-btn">A-Z</button>
+        </div>
+        <div class="search-container">
+            <span>&#128269;</span> <input type="text" placeholder="Search our products here...">
+        </div>
+    </div>
+    
+    <div class="product-grid">
+        
+        <div class="card">
+            <img src="PHOTOS/Indonesian.jpg" alt="Indonesian Food">
+            <div class="card-content">
+                <h2>Indonesian food</h2>
+                <p class="price">120k / day</p>
+                <p class="short-desc">Indonesian cuisine is known for its rich and diverse flavors.</p>
+        
+                <p class="full-desc" style="display: none;">
+                    Indonesian cuisine is known for its rich and diverse flavors.  Popular dishes include nasi goreng (fried rice), gado-gado (vegetable salad), and satay (grilled meat skewers).
+                </p>
+
+                <div class="card-actions">
+                <p class="view-details" onclick="toggleDescription(this)">View Details</p>
+                <p><button class="button">Order</button></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="PHOTOS/Homepagefood2.jpg" alt="Diet Menu">
+            <div class="card-content">
+                <h2>Diet menu</h2>
+                <p class="price">120k / 2 days</p>
+                <p class="short-desc">Diet food typically refers to meals that are low in calories, fat, and sugar.</p>
+        
+                <p class="full-desc" style="display: none;">
+                    Diet food typically refers to meals that are low in calories, fat, and sugar, often designed for individuals with specific dietary needs or restrictions.
+                </p>
+                <div class="card-actions">
+                <p class="view-details" onclick="toggleDescription(this)">View Details</p>
+                <p><button class="button">Order</button></p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="PHOTOS/Italian.jpg" alt="Italian Food">
+            <div class="card-content">
+                <h2>Italian food</h2>
+                <p class="price">140k / 2 days</p>
+                <p class="short-desc">Italian cuisine is famous for its pasta dishes, pizza, and rich sauces.</p>
+        
+                <p class="full-desc" style="display: none;">
+                    Italian cuisine is famous for its pasta dishes, pizza, and rich sauces. Italian food often features fresh vegetables, olive oil, garlic, and a blend of cheeses.
+                </p>
+                <div class="card-actions">
+                <p class="view-details" onclick="toggleDescription(this)">View Details</p>
+                <p><button class="button">Order</button></p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="PHOTOS/mexican.jpg" alt="Another food">
+             <div class="card-content">
+                <h2>Mexican food</h2>
+                <p class="price">150k / Week</p>
+                <p class="short-desc">Mexican cuisine is known for its bold flavors, vibrant colors, and variety of dishes.</p>
+        
+                <p class="full-desc" style="display: none;">
+                    Mexican cuisine is known for its bold flavors, vibrant colors, and variety of dishes. Common ingredients include beans, corn, avocado, and a blend of spices. Popular dishes include tacos, burritos, and enchiladas.
+                </p>
+                <div class="card-actions">
+                <p class="view-details" onclick="toggleDescription(this)">View Details</p>
+                <p><button class="button">Order</button></p>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="PHOTOS/japan.jpg" alt="Another food">
+             <div class="card-content">
+                <h2>Japanese Food</h2>
+                <p class="price">220k / Week</p>
+                <p class="short-desc">Japanese cuisine emphasizes fresh ingredients and simple preparation methods.</p>
+        
+                <p class="full-desc" style="display: none;">
+                    Japanese cuisine emphasizes fresh ingredients, seasonality, and simple preparation methods. Popular dishes include sushi, ramen, and tempura, often featuring ingredients like rice, seaweed, and soy sauce.
+                </p>
+                <div class="card-actions">
+                <p class="view-details" onclick="toggleDescription(this)">View Details</p>
+                <p><button class="button">Order</button></p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="PHOTOS/indian.jpg" alt="Another food">
+             <div class="card-content">
+                <h2>Indian Food</h2>
+                <p class="price">280k / Week</p>
+                <p class="short-desc">Indian cuisine is renowned for its rich and complex spice blends.</p>
+        
+                <p class="full-desc" style="display: none;">
+                    Indian cuisine is renowned for its rich and complex spice blends, often featuring a combination of herbs, spices, and yogurt. Popular dishes include curries, tandoori chicken, and naan bread.
+                </p>
+                <div class="card-actions">
+                <p class="view-details" onclick="toggleDescription(this)">View Details</p>
+                <p><button class="button">Order</button></p>
+                </div>
+                
+            </div>
+        </div>
+   </div>
+
+
+    <div class="footer-text">
+        <p>CAteriNgz - is a homemade culinary that has become a go-to for great food at events in Jakarta, Bandung, and Malang. We're all about using the best ingredients. We get our stuff locally and use seasonal items to keep things fresh and sustainable.</p>
+    </div>
+  </div>
+
+
+   <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 CAteriNgz. All Rights Reserved.</p>
+        <ul class="footer-links">
+          <li><a href="#">Follow Us</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

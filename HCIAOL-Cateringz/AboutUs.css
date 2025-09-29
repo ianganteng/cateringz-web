@@ -1,0 +1,290 @@
+/* General Styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FDF5F6; /* Warna latar belakang pink muda seperti di gambar */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  height: 80px;
+}
+
+.logo p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: green;
+  margin: 0;
+}
+
+.button {
+border: none;
+outline: 0;
+display: inline-block;
+padding: 8px;
+color: rgb(0, 0, 0);
+font-weight: bold;
+background-color: greenyellow;
+text-align: center;
+cursor: pointer;
+width: 100%;
+border-radius: 8px;
+}
+
+.button:hover{
+  background-color: black;
+  color: white;
+}
+
+
+.navbar ol {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #28a745;
+}
+
+.regist-btn {
+  background-color: greenyellow;
+  color: black;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.regist-btn:hover {
+  background-color: #218838;
+}
+
+/* Main Content Container */
+.page-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px 40px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.header h1 {
+  font-size: 42px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
+}
+
+.divider {
+width: 100%;
+height: 1px;
+background-color: gray;
+margin-top: 5px;
+margin-bottom: 10px;
+}
+
+.greetings p {
+  font-size: 60px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+
+.about-us-content {
+  display: flex;
+  gap: 50px; /* Jarak antara kolom kiri dan kanan */
+  align-items: flex-start; /* Konten dimulai dari atas */
+}
+
+.left-column {
+  flex: 1.5; /* Kolom kiri sedikit lebih lebar */
+  display: flex;
+  flex-direction: column;
+}
+
+.right-column {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  max-height: 600px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.column-title {
+  font-size: 17px;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 8px; /* Jarak ke area scroll */
+  margin-top: 0;
+  font-weight: normal;
+  text-align: center;
+}
+
+.greetings p {
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+}
+
+.main-text p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.small-images-container {
+  display: flex;
+  gap: 20px; 
+  margin-top: 20px;
+}
+
+.image-item {
+  width: 100%;
+}
+
+.image-item img {
+  width: 100%;
+  height: auto; 
+  display: block;
+  padding: 4px;
+  border-radius: 10px;
+}
+
+.scroll-container {
+  max-height: 550px; 
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.scroll-container .image-item:not(:first-child) {
+  margin-top: 20px;
+}
+
+.image-caption{
+  font-size: 13px;
+  color: #000000;
+  margin-top: 4px;
+  text-align: left;
+}
+.image-subcaption {
+  font-size: 13px;
+  color: #000000;
+  margin-top: 4px;
+  text-align: right;
+}
+
+
+
+/* Footer Text */
+.footer-text {
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 20px auto 0 auto;
+}
+
+/* Styling untuk Footer */
+
+footer {
+  background-color: #333; /* Warna latar belakang gelap */
+  color: #eee; /* Warna teks terang */
+  padding: 30px 5%;
+  margin-top: 50px; /* Jarak dari konten di atasnya */
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto; /* Agar sejajar dengan .page-container */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Agar responsif jika tidak muat */
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer-links {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 25px;
+}
+
+.footer-links a {
+  color: #eee;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+
+.footer-links a:hover {
+  color: #AEF359;
+}
+
+
+/* Penyesuaian untuk layar kecil (mobile) */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Susun secara vertikal */
+    gap: 20px;
+    text-align: center;
+  }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 15px;
+  }
+  
+  .product-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .search-container input {
+    width: 100%;
+  }
+
+  .page-container {
+    padding: 20px;
+    margin: 20px;
+  }
+}
+
+
+
